@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2332EFA25C67E0D00D4E818 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2332EF925C67E0D00D4E818 /* UIImageView+Extension.swift */; };
 		F29F52B625C63BF200206D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F52B525C63BF200206D18 /* AppDelegate.swift */; };
 		F29F52B825C63BF200206D18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F52B725C63BF200206D18 /* SceneDelegate.swift */; };
 		F29F52BA25C63BF200206D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F52B925C63BF200206D18 /* ViewController.swift */; };
 		F29F52BD25C63BF200206D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F52BB25C63BF200206D18 /* Main.storyboard */; };
 		F29F52BF25C63BF800206D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29F52BE25C63BF800206D18 /* Assets.xcassets */; };
 		F29F52C225C63BF800206D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29F52C025C63BF800206D18 /* LaunchScreen.storyboard */; };
+		F29F52CC25C63E2D00206D18 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F52CB25C63E2D00206D18 /* Async.swift */; };
+		F2C51E4E25C65ACA00440B99 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C51E4C25C65ACA00440B99 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2332EF925C67E0D00D4E818 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		F29F52B225C63BF100206D18 /* AsyncAwaitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAwaitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29F52B525C63BF200206D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29F52B725C63BF200206D18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		F29F52BE25C63BF800206D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29F52C125C63BF800206D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F29F52C325C63BF800206D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29F52CB25C63E2D00206D18 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		F2C51E4C25C65ACA00440B99 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				F29F52BE25C63BF800206D18 /* Assets.xcassets */,
 				F29F52C025C63BF800206D18 /* LaunchScreen.storyboard */,
 				F29F52C325C63BF800206D18 /* Info.plist */,
+				F29F52CB25C63E2D00206D18 /* Async.swift */,
+				F2C51E4C25C65ACA00440B99 /* UserTableViewCell.swift */,
+				F2332EF925C67E0D00D4E818 /* UIImageView+Extension.swift */,
 			);
 			path = AsyncAwaitDemo;
 			sourceTree = "<group>";
@@ -137,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2332EFA25C67E0D00D4E818 /* UIImageView+Extension.swift in Sources */,
+				F29F52CC25C63E2D00206D18 /* Async.swift in Sources */,
 				F29F52BA25C63BF200206D18 /* ViewController.swift in Sources */,
 				F29F52B625C63BF200206D18 /* AppDelegate.swift in Sources */,
 				F29F52B825C63BF200206D18 /* SceneDelegate.swift in Sources */,
+				F2C51E4E25C65ACA00440B99 /* UserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +305,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-concurrency";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yochidros.AsyncAwaitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -312,6 +325,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-experimental-concurrency";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yochidros.AsyncAwaitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
